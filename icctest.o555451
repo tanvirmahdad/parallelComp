@@ -1,0 +1,38 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myscript.sh
+  The time limit is 08:00:00 HH:MM:SS.
+  The target directory is: /home/uabclsa0020/hw1
+  The working directory is:  /scratch-local/uabclsa0020.icctest.555451
+  The memory limit is: 1gb
+  The job will start running after: 2021-02-12T02:31:40
+  Job Name: icctest
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  1  cores on master node  dmc5
+  Node list:  dmc5
+  Nodes:  dmc5
+  Command typed:
+/apps/scripts/run_script myscript.sh     
+  Queue submit command:
+sbatch --qos=class -J icctest --begin=2021-02-12T02:31:40 --requeue --mail-user=mahdad@uab.edu -o icctest.o555451 -t 08:00:00 -N 1-1 -n 1 --mem-per-cpu=1000 --constraint=dmc 
+Time taken = 5.509468 seconds
+Time taken = 5.498135 seconds
+Time taken = 5.506872 seconds
+Time taken = 157.070250 seconds
+Time taken = 156.170722 seconds
+Time taken = 156.120521 seconds
+Time taken = 743.257497 seconds
+Time taken = 763.261193 seconds
+Time taken = 730.929344 seconds
+./myscript.sh: line 11:  5988 Killed                  ./mahdad_hw1 10000 1000
+./myscript.sh: line 12:  5999 Killed                  ./mahdad_hw1 10000 1000
+./myscript.sh: line 13:  6005 Killed                  ./mahdad_hw1 10000 1000
+./myscript.sh: line 14:  6010 Killed                  ./mahdad_hw1 10000 10000
+./myscript.sh: line 15:  6012 Killed                  ./mahdad_hw1 10000 10000
+./myscript.sh: line 16:  6018 Killed                  ./mahdad_hw1 10000 10000
+slurmstepd: error: Detected 6 oom-kill event(s) in StepId=555451.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

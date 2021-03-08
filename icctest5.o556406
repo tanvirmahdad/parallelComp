@@ -1,0 +1,29 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myscript.sh
+  The time limit is 10:00:00 HH:MM:SS.
+  The target directory is: /home/uabclsa0020/hw1
+  The working directory is:  /scratch-local/uabclsa0020.icctest5.556406
+  The memory limit is: 1gb
+  The job will start running after: 2021-02-15T12:55:56
+  Job Name: icctest5
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  1  cores on master node  dmc5
+  Node list:  dmc5
+  Nodes:  dmc5
+  Command typed:
+/apps/scripts/run_script myscript.sh     
+  Queue submit command:
+sbatch --qos=class -J icctest5 --begin=2021-02-15T12:55:56 --requeue --mail-user=mahdad@uab.edu -o icctest5.o556406 -t 10:00:00 -N 1-1 -n 1 --mem-per-cpu=1000 --constraint=dmc 
+./myscript.sh: line 2: 14566 Killed                  ./mahdad_hw1 10000 1000
+./myscript.sh: line 3: 14568 Killed                  ./mahdad_hw1 10000 1000
+./myscript.sh: line 4: 14569 Killed                  ./mahdad_hw1 10000 1000
+./myscript.sh: line 5: 14571 Killed                  ./mahdad_hw1 10000 10000
+./myscript.sh: line 6: 14572 Killed                  ./mahdad_hw1 10000 10000
+./myscript.sh: line 7: 14574 Killed                  ./mahdad_hw1 10000 10000
+slurmstepd: error: Detected 6 oom-kill event(s) in StepId=556406.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
