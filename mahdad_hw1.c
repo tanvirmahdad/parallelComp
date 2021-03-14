@@ -145,7 +145,7 @@ int main(int argc, char **argv)
 
     
     /* Initialize the matrices */
-    srand48(time(0));
+    srand48(123456);
     present = initarray(present, N+2, N+2, 2);
     nextArr = initarray(nextArr, N+2, N+2, 0);
 

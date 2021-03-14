@@ -174,7 +174,8 @@ int main(int argc, char **argv)
    
 
     //caluclating time on main loop
-    starttime = gettime();
+   // starttime = gettime();
+     starttime = omp_get_wtime(); 
    
     //while loop will implement game of life until maximum iteration or present or next state is same
     while(count<max){
@@ -201,7 +202,8 @@ int main(int argc, char **argv)
     }
 
 
-    endtime = gettime();
+    //endtime = gettime();
+    endtime = omp_get_wtime(); 
 
     #ifdef TOTALSTEP
 
