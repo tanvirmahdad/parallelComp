@@ -1,10 +1,5 @@
 #!/bin/bash
-./mahdad_hw1 1000 1000
-./mahdad_hw1 1000 1000
-./mahdad_hw1 1000 1000
-./mahdad_hw1 5000 1000
-./mahdad_hw1 5000 1000
-./mahdad_hw1 5000 1000
-./mahdad_hw1 5000 5000
-./mahdad_hw1 5000 5000
-./mahdad_hw1 5000 5000
+module load intel
+./hw3_multithreded 5000 5000 1
+./hw3_multithreded 5000 5000 2
+./hw3_multithreded 5000 5000 4

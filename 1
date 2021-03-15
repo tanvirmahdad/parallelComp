@@ -74,12 +74,9 @@ void printarray(double **a, int mrows, int ncols) {
   }
 }
 
-double **arrayCopy(double **a,double **b,int N,int thread_count){
+double **arrayCopy(double **a,double **b,int N){
   int i,j;
-#   pragma omp parallel num_threads(thread_count)\
-     default(none) shared(a,b,N) private(i,j)
   for (i=0; i<N; i++)
-#     pragma omp for
       for (j=0; j<N; j++) 
         a[i][j]=b[i][j];
 
@@ -199,7 +196,7 @@ int main(int argc, char **argv)
       //If present and next state is same, exit from the while loop
       if(comparison_flag==1)
         break;
-      present=arrayCopy(present,nextArr,N+2,thread_count);
+      present=arrayCopy(present,nextArr,N+2);
 
       
 
