@@ -76,12 +76,14 @@ void printarray(double **a, int mrows, int ncols) {
 
 double **arrayCopy(double **a,double **b,int N,int thread_count){
   int i,j;
-#   pragma omp parallel for num_threads(thread_count)\
+#   pragma omp parallel num_threads(thread_count)\
      default(none) shared(a,b,N) private(i,j)
+{
+# pragma omp for
   for (i=0; i<N; i++)
       for (j=0; j<N; j++) 
         a[i][j]=b[i][j];
-
+}
   return a;
 }
 
@@ -94,8 +96,10 @@ double **gameOfLife(double **a, double **b,int N,int thread_count)
     int i, j, k;
     int flip=0;
     int neighbourNumber;
-#   pragma omp parallel for num_threads(thread_count)\
+#   pragma omp parallel num_threads(thread_count)\
      default(none) shared(a,b,flip,N,comparison_flag) private(neighbourNumber,i,j)
+  {
+#  pragma omp for
     for (i=0; i<N; i++)
     {
       for (j=0; j<N; j++)
@@ -133,7 +137,7 @@ double **gameOfLife(double **a, double **b,int N,int thread_count)
            }
           }
          }
-
+     }
       if(flip==0){
          comparison_flag=1;
     }
