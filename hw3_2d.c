@@ -3,9 +3,9 @@
 *  Name: Ahmed Tanvir Mahdad                                                  *
 *  BlazerID: mahdad                                                           *
 *  Course Section: CS 732                                                     *
-*  Homework #1                                                                *
-*  To Compile: gcc -O mahdad_hw1.c (to print matrices add -DINTPRINT)         * 
-*  To run: ./a.out <problem_size> <maximum_step>                              *                                               *
+*  Homework #3                                                                *
+*  To Compile: icc -fopenmp -O3 -o hw3_2d hw3_2d.c (to print matrices add -DINTPRINT)         * 
+*  To run: ./hw3_2d <problem_size> <maximum_step> <thread_count><thread_count>                              *                                               *
 ******************************************************************************/
 
 

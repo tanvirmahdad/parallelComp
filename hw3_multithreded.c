@@ -4,8 +4,8 @@
 *  BlazerID: mahdad                                                           *
 *  Course Section: CS 732                                                     *
 *  Homework #1                                                                *
-*  To Compile: gcc -O mahdad_hw1.c (to print matrices add -DINTPRINT)         * 
-*  To run: ./a.out <problem_size> <maximum_step>                              *                                               *
+*  To Compile: gcc -fopenmp -O3 hw3_multithreded hw3_multithreded.c (to print matrices add -DINTPRINT)         * 
+*  To run: ./hw3_multithreded <problem_size> <maximum_step> <thread_count>                              *                                               *
 ******************************************************************************/
 
 

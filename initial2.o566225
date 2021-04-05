@@ -1,0 +1,26 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myscript.sh
+  The time limit is 00:30:00 HH:MM:SS.
+  The target directory is: /home/uabclsa0020/hw1
+  The working directory is:  /scratch-local/uabclsa0020.initial2.566225
+  The memory limit is: 1gb
+  The job will start running after: 2021-03-08T11:34:14
+  Job Name: initial2
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  1  cores on master node  dmc9
+  Node list:  dmc9
+  Nodes:  dmc9
+  Command typed:
+/apps/scripts/run_script myscript.sh     
+  Queue submit command:
+sbatch --qos=class -J initial2 --begin=2021-03-08T11:34:14 --requeue --mail-user=mahdad@uab.edu -o initial2.o566225 -t 00:30:00 -N 1-1 -n 1 --mem-per-cpu=1000 --constraint=dmc 
+./hw3_multithreded: error while loading shared libraries: libiomp5.so: cannot open shared object file: No such file or directory
+./hw3_multithreded: error while loading shared libraries: libiomp5.so: cannot open shared object file: No such file or directory
+./hw3_multithreded: error while loading shared libraries: libiomp5.so: cannot open shared object file: No such file or directory
+./hw3_multithreded: error while loading shared libraries: libiomp5.so: cannot open shared object file: No such file or directory

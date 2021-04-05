@@ -1,0 +1,26 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myscript.sh
+  The time limit is 00:10:00 HH:MM:SS.
+  The target directory is: /home/uabclsa0020/hw1
+  The working directory is:  /scratch-local/uabclsa0020.initial3.566226
+  The memory limit is: 1gb
+  The job will start running after: 2021-03-08T11:38:43
+  Job Name: initial3
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  1  cores on master node  dmc9
+  Node list:  dmc9
+  Nodes:  dmc9
+  Command typed:
+/apps/scripts/run_script myscript.sh     
+  Queue submit command:
+sbatch --qos=class -J initial3 --begin=2021-03-08T11:38:43 --requeue --mail-user=mahdad@uab.edu -o initial3.o566226 -t 00:10:00 -N 1-1 -n 1 --mem-per-cpu=1000 --constraint=dmc 
+Time taken = 8.016987 seconds
+Time taken = 12.895651 seconds
+Time taken = 19.825178 seconds
+Time taken = 44.947276 seconds

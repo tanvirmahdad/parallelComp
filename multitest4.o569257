@@ -1,0 +1,29 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myscript.sh
+  The time limit is 4:00:00 HH:MM:SS.
+  The target directory is: /home/uabclsa0020/hw1
+  The working directory is:  /scratch-local/uabclsa0020.multitest4.569257
+  The memory limit is: 8gb
+  The job will start running after: 2021-03-15T03:10:51
+  Job Name: multitest4
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  8  cores on master node  dmc6
+  Node list:  dmc6
+  Nodes:  dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6
+  Command typed:
+/apps/scripts/run_script myscript.sh     
+  Queue submit command:
+sbatch --qos=class -J multitest4 --begin=2021-03-15T03:10:51 --requeue --mail-user=mahdad@uab.edu -o multitest4.o569257 -t 4:00:00 -N 1-1 -n 8 --mem-per-cpu=1000 --constraint=dmc 
+./myscript.sh: line 3: ./hw3_multithreded: Permission denied
+./myscript.sh: line 4: ./hw3_multithreded: Permission denied
+./myscript.sh: line 5: ./hw3_multithreded: Permission denied
+./myscript.sh: line 6: ./hw3_multithreded: Permission denied
+./myscript.sh: line 7: ./hw3_multithreded: Permission denied
+./myscript.sh: line 8: ./hw3_multithreded: Permission denied
+./myscript.sh: line 9: ./hw3_multithreded: Permission denied

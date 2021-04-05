@@ -1,0 +1,29 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myscript.sh
+  The time limit is 02:00:00 HH:MM:SS.
+  The target directory is: /home/uabclsa0020/hw1
+  The working directory is:  /scratch-local/uabclsa0020.multitesticc.570234
+  The memory limit is: 10gb
+  The job will start running after: 2021-03-17T11:25:11
+  Job Name: multitesticc
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  10  cores on master node  dmc5
+  Node list:  dmc5
+  Nodes:  dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5
+  Command typed:
+/apps/scripts/run_script myscript.sh     
+  Queue submit command:
+sbatch --qos=class -J multitesticc --begin=2021-03-17T11:25:11 --requeue --mail-user=mahdad@uab.edu -o multitesticc.o570234 -t 02:00:00 -N 1-1 -n 10 --mem-per-cpu=1000 --constraint=dmc 
+Time taken = 805.155514 seconds
+Time taken = 413.374320 seconds
+Time taken = 248.809298 seconds
+Time taken = 166.520838 seconds
+Time taken = 158.679638 seconds
+Time taken = 184.996501 seconds
+Time taken = 169.805995 seconds
