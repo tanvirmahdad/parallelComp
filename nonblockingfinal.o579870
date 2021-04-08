@@ -1,0 +1,29 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: nonblocking.sh
+  The time limit is 01:40:00 HH:MM:SS.
+  The target directory is: /home/uabclsa0020/hw1
+  The working directory is:  /scratch-local/uabclsa0020.nonblockingfinal.579870
+  The memory limit is: 20gb
+  The job will start running after: 2021-04-08T01:51:07
+  Job Name: nonblockingfinal
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  20  cores on master node  dmc6
+  Node list:  dmc6
+  Nodes:  dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6 dmc6
+  Command typed:
+/apps/scripts/run_script_mpi nonblocking.sh     
+  Queue submit command:
+sbatch --qos=class -J nonblockingfinal --begin=2021-04-08T01:51:07 --requeue --mail-user=mahdad@uab.edu -o nonblockingfinal.o579870 -t 01:40:00 -n 20 --mem-per-cpu=1000 --constraint=dmc 
+ 
+Time taken = 2372.830360 seconds
+Time taken = 1246.997565 seconds
+Time taken = 672.044215 seconds
+Time taken = 359.212021 seconds
+Time taken = 189.569149 seconds
+Time taken = 155.303636 seconds

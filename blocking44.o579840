@@ -1,0 +1,32 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myscript.sh
+  The time limit is 03:00:00 HH:MM:SS.
+  The target directory is: /home/uabclsa0020/hw1
+  The working directory is:  /scratch-local/uabclsa0020.blocking44.579840
+  The memory limit is: 20gb
+  The job will start running after: 2021-04-07T23:00:32
+  Job Name: blocking44
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  1  cores on master node  dmc57
+  Node list:  dmc[57,59-60,62,64-65]
+  Nodes:  dmc57 dmc60 dmc64 dmc64 dmc65 dmc65 dmc65 dmc65 dmc62 dmc62 dmc62 dmc62 dmc59 dmc59 dmc59 dmc59 dmc59 dmc59 dmc59 dmc59
+  Command typed:
+/apps/scripts/run_script_mpi myscript.sh     
+  Queue submit command:
+sbatch --qos=class -J blocking44 --begin=2021-04-07T23:00:32 --requeue --mail-user=mahdad@uab.edu -o blocking44.o579840 -t 03:00:00 -n 20 --mem-per-cpu=1000 --constraint=dmc 
+ 
+srun: Warning: can't run 1 processes on 6 nodes, setting nnodes to 1
+Time taken = 2203.845880 seconds
+srun: Warning: can't run 2 processes on 6 nodes, setting nnodes to 2
+Time taken = 1101.521597 seconds
+srun: Warning: can't run 4 processes on 6 nodes, setting nnodes to 4
+Time taken = 550.732718 seconds
+Time taken = 277.270422 seconds
+Time taken = 140.039200 seconds
+Time taken = 112.947522 seconds
