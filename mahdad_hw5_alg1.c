@@ -76,7 +76,7 @@ int main(int argc, char **argv)
  
     if (rank == 0) {
       // printf("Time taken in process 0 = %g\n", t2);
-       printf("Maximum time taken among all processes = %g\n", t1);
+       printf("Process Number : %d, Byte Number, %d, Maximum time taken among all processes = %g\n",size,byteNum,t1);
 
       
     }
