@@ -1,0 +1,102 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: hw52.sh
+  The time limit is 00:10:00 HH:MM:SS.
+  The target directory is: /home/uabclsa0020/hw1
+  The working directory is:  /scratch-local/uabclsa0020.hw52.590655
+  The memory limit is: 16gb
+  The job will start running after: 2021-04-21T21:38:50
+  Job Name: hw52
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  16  cores on master node  dmc5
+  Node list:  dmc5
+  Nodes:  dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5 dmc5
+  Command typed:
+/apps/scripts/run_script hw52.sh     
+  Queue submit command:
+sbatch --qos=class -J hw52 --begin=2021-04-21T21:38:50 --requeue --mail-user=mahdad@uab.edu -o hw52.o590655 -t 00:10:00 -N 1-1 -n 16 --mem-per-cpu=1000 --constraint=dmc 
+Process Number : 1, Byte Number, 32, Maximum time taken among all processes = 0.00012517
+Process Number : 1, Byte Number, 64, Maximum time taken among all processes = 0.000171942
+Process Number : 1, Byte Number, 128, Maximum time taken among all processes = 0.000208715
+Process Number : 1, Byte Number, 256, Maximum time taken among all processes = 0.000143163
+Process Number : 1, Byte Number, 512, Maximum time taken among all processes = 0.000217606
+Process Number : 1, Byte Number, 1024, Maximum time taken among all processes = 0.000186274
+Process Number : 1, Byte Number, 2048, Maximum time taken among all processes = 0.00023242
+Process Number : 1, Byte Number, 4096, Maximum time taken among all processes = 0.000216668
+Process Number : 1, Byte Number, 8192, Maximum time taken among all processes = 0.000216169
+Process Number : 1, Byte Number, 16384, Maximum time taken among all processes = 0.000217184
+Process Number : 1, Byte Number, 32768, Maximum time taken among all processes = 0.000215726
+Process Number : 1, Byte Number, 65536, Maximum time taken among all processes = 0.00026644
+Process Number : 1, Byte Number, 131072, Maximum time taken among all processes = 0.000295784
+Process Number : 1, Byte Number, 262144, Maximum time taken among all processes = 0.000368207
+Process Number : 1, Byte Number, 524288, Maximum time taken among all processes = 0.000391741
+Process Number : 1, Byte Number, 1048576, Maximum time taken among all processes = 0.000943816
+Process Number : 2, Byte Number, 32, Maximum time taken among all processes = 0.00019281
+Process Number : 2, Byte Number, 64, Maximum time taken among all processes = 0.00014009
+Process Number : 2, Byte Number, 128, Maximum time taken among all processes = 0.00013176
+Process Number : 2, Byte Number, 256, Maximum time taken among all processes = 0.000171123
+Process Number : 2, Byte Number, 512, Maximum time taken among all processes = 0.000134981
+Process Number : 2, Byte Number, 1024, Maximum time taken among all processes = 0.000157707
+Process Number : 2, Byte Number, 2048, Maximum time taken among all processes = 0.000241118
+Process Number : 2, Byte Number, 4096, Maximum time taken among all processes = 0.000185292
+Process Number : 2, Byte Number, 8192, Maximum time taken among all processes = 0.000166554
+Process Number : 2, Byte Number, 16384, Maximum time taken among all processes = 0.000221596
+Process Number : 2, Byte Number, 32768, Maximum time taken among all processes = 0.000159716
+Process Number : 2, Byte Number, 65536, Maximum time taken among all processes = 0.000258589
+Process Number : 2, Byte Number, 131072, Maximum time taken among all processes = 0.000403407
+Process Number : 2, Byte Number, 262144, Maximum time taken among all processes = 0.000506738
+Process Number : 2, Byte Number, 524288, Maximum time taken among all processes = 0.000943851
+Process Number : 2, Byte Number, 1048576, Maximum time taken among all processes = 0.00191336
+Process Number : 4, Byte Number, 32, Maximum time taken among all processes = 0.000168067
+Process Number : 4, Byte Number, 64, Maximum time taken among all processes = 0.000216272
+Process Number : 4, Byte Number, 128, Maximum time taken among all processes = 0.000147015
+Process Number : 4, Byte Number, 256, Maximum time taken among all processes = 0.000200271
+Process Number : 4, Byte Number, 512, Maximum time taken among all processes = 0.000148061
+Process Number : 4, Byte Number, 1024, Maximum time taken among all processes = 0.000219026
+Process Number : 4, Byte Number, 2048, Maximum time taken among all processes = 0.000158229
+Process Number : 4, Byte Number, 4096, Maximum time taken among all processes = 0.000243652
+Process Number : 4, Byte Number, 8192, Maximum time taken among all processes = 0.000259273
+Process Number : 4, Byte Number, 16384, Maximum time taken among all processes = 0.000248238
+Process Number : 4, Byte Number, 32768, Maximum time taken among all processes = 0.000315264
+Process Number : 4, Byte Number, 65536, Maximum time taken among all processes = 0.000376151
+Process Number : 4, Byte Number, 131072, Maximum time taken among all processes = 0.000567469
+Process Number : 4, Byte Number, 262144, Maximum time taken among all processes = 0.000996779
+Process Number : 4, Byte Number, 524288, Maximum time taken among all processes = 0.00182884
+Process Number : 4, Byte Number, 1048576, Maximum time taken among all processes = 0.00403948
+Process Number : 8, Byte Number, 32, Maximum time taken among all processes = 0.000171938
+Process Number : 8, Byte Number, 64, Maximum time taken among all processes = 0.000132601
+Process Number : 8, Byte Number, 128, Maximum time taken among all processes = 0.000150138
+Process Number : 8, Byte Number, 256, Maximum time taken among all processes = 0.000190607
+Process Number : 8, Byte Number, 512, Maximum time taken among all processes = 0.000134139
+Process Number : 8, Byte Number, 1024, Maximum time taken among all processes = 0.000184639
+Process Number : 8, Byte Number, 2048, Maximum time taken among all processes = 0.000190214
+Process Number : 8, Byte Number, 4096, Maximum time taken among all processes = 0.000194187
+Process Number : 8, Byte Number, 8192, Maximum time taken among all processes = 0.000272536
+Process Number : 8, Byte Number, 16384, Maximum time taken among all processes = 0.000355985
+Process Number : 8, Byte Number, 32768, Maximum time taken among all processes = 0.000506689
+Process Number : 8, Byte Number, 65536, Maximum time taken among all processes = 0.000645517
+Process Number : 8, Byte Number, 131072, Maximum time taken among all processes = 0.00106812
+Process Number : 8, Byte Number, 262144, Maximum time taken among all processes = 0.00190532
+Process Number : 8, Byte Number, 524288, Maximum time taken among all processes = 0.00390299
+Process Number : 8, Byte Number, 1048576, Maximum time taken among all processes = 0.00738284
+Process Number : 16, Byte Number, 32, Maximum time taken among all processes = 0.00015355
+Process Number : 16, Byte Number, 64, Maximum time taken among all processes = 0.000192413
+Process Number : 16, Byte Number, 128, Maximum time taken among all processes = 0.000218277
+Process Number : 16, Byte Number, 256, Maximum time taken among all processes = 0.000225269
+Process Number : 16, Byte Number, 512, Maximum time taken among all processes = 0.000312817
+Process Number : 16, Byte Number, 1024, Maximum time taken among all processes = 0.000265945
+Process Number : 16, Byte Number, 2048, Maximum time taken among all processes = 0.000334567
+Process Number : 16, Byte Number, 4096, Maximum time taken among all processes = 0.000365222
+Process Number : 16, Byte Number, 8192, Maximum time taken among all processes = 0.00044173
+Process Number : 16, Byte Number, 16384, Maximum time taken among all processes = 0.000577949
+Process Number : 16, Byte Number, 32768, Maximum time taken among all processes = 0.000738048
+Process Number : 16, Byte Number, 65536, Maximum time taken among all processes = 0.00113088
+Process Number : 16, Byte Number, 131072, Maximum time taken among all processes = 0.00209968
+Process Number : 16, Byte Number, 262144, Maximum time taken among all processes = 0.00466358
+Process Number : 16, Byte Number, 524288, Maximum time taken among all processes = 0.00803063
+Process Number : 16, Byte Number, 1048576, Maximum time taken among all processes = 0.0151988
